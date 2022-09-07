@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+	<Nullable>disable</Nullable>
+
+	<UseWPF>true</UseWPF>
+	<UseWindowsForms>true</UseWindowsForms>
+	<PackageId>Unclassified.TxLib</PackageId>
+	<Version>1.0.1</Version>
+	<Authors>Yves Goergen</Authors>
+	<Product>TxTranslation</Product>
+	<Copyright>Yves Goergen</Copyright>
+	<Description>Simple yet powerful translation and localisation library for .NET applications.
+
+TxTranslation is a complete solution for drop-in localisation in all types of .NET applications (WPF, WinForms, ASP.NET, Service, Console). It has an easy syntax through XAML extensions and Windows Forms binding and regards a fallback language on missing translations of a text. Translation texts may contain count-specific translations and placeholders, and the library provides number and time formatting. A comfortable editor application for dictionaries with consistency checks and similar translations suggestions is available from the project website.
+
+Please visit the project website for further information on TxTranslation, including a feature list, sample code, and a developer guide.</Description>
+	<PackageTags>txtranslation txlib tx translation translator language locale format localisation localization globalisation globalization l10n i18n dictionary</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Properties\**" />
+    <EmbeddedResource Remove="Properties\**" />
+    <None Remove="Properties\**" />
+    <Page Remove="Properties\**" />
+  </ItemGroup>
+
+</Project>
